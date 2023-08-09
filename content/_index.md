@@ -23,7 +23,7 @@ intro:
   title: Built Exclusively For You
   subtitle: SHORT INTRO VIDEO
   description: No more juggling multiple tools and platforms. With Twinmo's Testrunz, you have a single unified platform for every aspect of product development.  </br>This includes all stakeholders - engineers, lab managers, technicians, research, development, and production teams.
-  thumbnail: "/images/video-popup.jpg"
+  thumbnail: "/images/video-popup.png"
   video_id: dyZcRRWiuuw
 
 #speciality
@@ -32,12 +32,12 @@ speciality:
     title: One Unified Platform
     subtitle: PRIMARY SPECIALITY
     description: Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the.
-    image: /images/features-01.png
+    image: /images/Unified.png
   secondary:
     title: Vertically Integrated Solution
     subtitle: SECONDARY SPECIALITY
     description: From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code.
-    image: /images/features-02.png
+    image: /images/ImageTwinmo.png
 
 #Testimonial
 testimonial:

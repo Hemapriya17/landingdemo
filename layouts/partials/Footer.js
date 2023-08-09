@@ -10,7 +10,7 @@ const Footer = () => {
   const { copyright, footer_content } = config.params;
   const { email, phone, location } = config.contact_info;
   return (
-    <footer className="">
+    // <footer className="">
       <div className="container">
         <div className="row border-y border-border py-12">
           <div className="animate md:col-6 lg:col-3">
@@ -58,7 +58,7 @@ const Footer = () => {
           {markdownify(copyright, "p", "footer-copy-write")}
         </div>
       </div>
-    </footer>
+    // </footer>
   );
 };
 

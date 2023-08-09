@@ -2,14 +2,12 @@ import Base from "@layouts/Baseof";
 import Circle from "@layouts/components/Circle";
 import Cta from "@layouts/components/Cta";
 import ImageFallback from "@layouts/components/ImageFallback";
-import VideoPopup from "@layouts/components/VideoPopup";
 import { getListPage } from "@lib/contentParser";
 import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { TbQuote } from "react-icons/tb";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -97,7 +95,6 @@ const Platforms = ({ banner, features, speciality }) => {
 
   return (
     <Base>
-
       <section className="section banner pt-0">
         <div className="container-xl">
           <div className="relative">
@@ -217,8 +214,8 @@ const Platforms = ({ banner, features, speciality }) => {
               <ImageFallback
                 className="mx-auto"
                 src={speciality.secondary.image}
-                width={575}
-                height={511}
+                width={375}
+                height={311}
                 alt="secondary speciality"
               />
             </div>

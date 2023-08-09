@@ -1,7 +1,7 @@
 ---
 banner:
   title: "Your All-in-One Experimentation </br> Platform for Data Driven Decisions"
-  image: /images/Report.png
+  image: /images/platforms/Report.png
   link:
     label: Get Premium Version
     href: "#"
@@ -51,12 +51,12 @@ speciality:
     title: Testrunz
     subtitle: SOFTWARE
     description: Introducing Testrunz, your streamlined solution for executing and tracking product experiments. Testrunz connects to industry-standard test instruments, providing real-time data, analyzing results, and generating reports.
-    image: /images/features-01.png
+    image: /images/platforms/Testrunz.png
   secondary:
     title: Unity
     subtitle: HARDWARE
     description: Meet Unity, our advanced hardware module designed to interface with lab instruments and facilitate a seamless connection to Testrunz. With its 20-channel capacity for thermocouple, AI, DI, DO measurements and power product measurement features.
-    image: /images/features-02.png
+    image: /images/platforms/Unity.png
 
 #Testimonial
 testimonial:

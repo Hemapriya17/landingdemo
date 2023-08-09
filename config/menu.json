@@ -18,12 +18,20 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Elements",
-          "url": "/elements"
+          "name": "Home",
+          "url": "/"
         },
         {
-          "name": "Terms & Conditions",
-          "url": "/terms-policy"
+          "name": "Platforms",
+          "url": "/platforms"
+        },
+        {
+          "name": "Industries",
+          "url": "/industries"
+        },
+        {
+          "name": "Blogs",
+          "url": "/posts"
         }
       ]
     },
@@ -47,7 +55,7 @@
     },
     {
       "name": "Blog",
-      "url": "/blog"
+      "url": "/posts"
     }
   ]
 }

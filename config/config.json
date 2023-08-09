@@ -1,8 +1,8 @@
 {
   "site": {
-    "title": "Andromeda Light Nextjs",
+    "title": "Twinmo landing",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
+    "favicon": "/favicon.png",
     "logo": "/images/HomeLogo.png",
     "logo_width": "150",
     "logo_height": "32",

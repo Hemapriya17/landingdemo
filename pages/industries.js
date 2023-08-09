@@ -6,7 +6,7 @@ import { getListPage } from "@lib/contentParser";
 import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 const Industries = ({ banner, speciality }) => {
 
@@ -166,16 +166,16 @@ const Industries = ({ banner, speciality }) => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-10">
+                  {/* <div className="col-10 justify-center ">
                     <ImageFallback
                       className="banner-img opacity-0"
                       src={banner.image}
-                      width={1170}
+                      width={770}
                       height={666}
                       priority={true}
                       alt=""
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
