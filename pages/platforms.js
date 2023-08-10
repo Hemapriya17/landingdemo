@@ -1,7 +1,7 @@
 import Base from "@layouts/Baseof";
 import Circle from "@layouts/components/Circle";
-import Cta from "@layouts/components/Cta";
 import ImageFallback from "@layouts/components/ImageFallback";
+import Footer from "@layouts/partials/Footer";
 import { getListPage } from "@lib/contentParser";
 import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
@@ -282,8 +282,8 @@ const Platforms = ({ banner, features, speciality }) => {
         </div>
       </section>
 
-      {/* Cta */}
-      <Cta />
+      {/* Footer */}
+      <Footer />
     </Base>
   );
 };

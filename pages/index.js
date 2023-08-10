@@ -1,6 +1,5 @@
 import Base from "@layouts/Baseof";
 import Circle from "@layouts/components/Circle";
-import Cta from "@layouts/components/Cta";
 import ImageFallback from "@layouts/components/ImageFallback";
 import VideoPopup from "@layouts/components/VideoPopup";
 import Footer from "@layouts/partials/Footer";
@@ -225,7 +224,7 @@ const Home = ({ banner, intro, speciality, testimonial }) => {
       </section>
 
       {/* Short Into */}
-      <section className="section pt-0">
+      {/* <section className="section pt-0">
         <div className="container-xl">
           <div className="relative px-4 py-[70px]">
             <div className="text-center">
@@ -293,12 +292,12 @@ const Home = ({ banner, intro, speciality, testimonial }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Special Features */}
       <section className="section">
         <div className="container">
-          <div className="row items-center justify-center">
+          <div className="row items-center justify-center mb-20">
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
                 className="mx-auto"
@@ -318,7 +317,7 @@ const Home = ({ banner, intro, speciality, testimonial }) => {
               {markdownify(speciality.primary.description, "p", "mt-10")}
             </div>
           </div>
-          <div className="row items-center">
+          <div className="row items-center mb-20">
             <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto"
@@ -338,12 +337,31 @@ const Home = ({ banner, intro, speciality, testimonial }) => {
               {markdownify(speciality.secondary.description, "p", "mt-10")}
             </div>
           </div>
+          <div className="row items-center justify-center mb-20">
+            <div className="animate lg:col-6 lg:order-2">
+              <ImageFallback
+                className="mx-auto"
+                src={speciality.tertiary.image}
+                width={575}
+                height={511}
+                alt="tertiary speciality"
+              />
+            </div>
+            <div className="animate lg:col-5 lg:order-1">
+              <p>{speciality.tertiary.subtitle}</p>
+              {markdownify(
+                speciality.tertiary.title,
+                "h2",
+                "mt-4 section-title bar-left"
+              )}
+              {markdownify(speciality.tertiary.description, "p", "mt-10")}
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Cta */}
-      {/* <Cta /> */}
-      {/* <Footer/> */}
+      {/* Footer */}
+      <Footer/>
     </Base>
   );
 };

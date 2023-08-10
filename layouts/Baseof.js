@@ -153,7 +153,7 @@ const Base = ({
       <Header />
       {/* main site */}
       <main ref={main}>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

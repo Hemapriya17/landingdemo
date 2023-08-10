@@ -38,6 +38,11 @@ speciality:
     subtitle: SECONDARY SPECIALITY
     description: From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code.
     image: /images/ImageTwinmo.png
+  tertiary:
+    title: Power of Rapid Experimentation
+    subtitle: TERTIARY SPECIALITY
+    description: Transform the way you discover, test, and learn. Our state-of-the-art Experimentation Platform is designed to accelerate your experimentation process, allowing you to make informed decisions quickly.
+    image: /images/Rapid.png
 
 #Testimonial
 testimonial:
