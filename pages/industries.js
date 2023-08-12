@@ -279,7 +279,7 @@ export default Industries;
 
 // for Platform page data
 export const getStaticProps = async () => {
-  const industrypage = await getListPage("content/industry.md");
+  const industrypage = await getListPage("content/_industry.md");
   const { frontmatter } = industrypage;
   const { banner, speciality } = frontmatter;
 
