@@ -1,5 +1,5 @@
 ---
-banner:
+bannerr:
   title: "Your All-in-One Experimentation </br> Platform for Data Driven Decisions"
   image: /images/platforms/Report.png
   link:
@@ -45,8 +45,8 @@ features:
             for insightful and detailed data examination.
 
 
-#speciality
-speciality:
+#specialities
+specialities:
   primary:
     title: Testrunz
     subtitle: SOFTWARE

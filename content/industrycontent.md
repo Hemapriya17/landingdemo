@@ -1,5 +1,5 @@
 ---
-banner:
+banners:
   title: "Bringing the Power of Experimentation </br>  to All Industries"
   image: /images/platforms/Unity.png
   link:
@@ -7,7 +7,7 @@ banner:
     href: "#"
 
 #speciality
-speciality:
+specialityy:
   primary:
     title: Personal care appliances
     description: Twinmo.ai excels in prioritizing paramount hygiene. It streamlines testing for grooming appliances, ensuring efficiency and quality in product launches. Manage procedures and data seamlessly for reliable results.

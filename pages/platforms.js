@@ -11,30 +11,30 @@ import { useEffect, useRef } from "react";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Platforms = ({ banner, features, speciality }) => {
+const Platforms = ({ bannerr, features, specialities }) => {
   const paginationRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const banner = document.querySelector(".banner");
-      const bannerBg = document.querySelector(".banner-bg");
-      const bannerContent = document.querySelector(".banner-content");
+      const bannerr = document.querySelector(".bannerr");
+      const bannerrBg = document.querySelector(".bannerr-bg");
+      const bannerrContent = document.querySelector(".bannerr-content");
       const header = document.querySelector(".header");
       const tl = gsap.timeline();
 
       tl.fromTo(
-        ".banner-title",
+        ".bannerr-title",
         { y: 20, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.5, delay: 0.5 }
       )
         .fromTo(
-          ".banner-btn",
+          ".bannerr-btn",
           { y: 20, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.5 },
           ">-0.4"
         )
         .fromTo(
-          ".banner-img",
+          ".bannerr-img",
           {
             y: 20,
             opacity: 0,
@@ -47,20 +47,20 @@ const Platforms = ({ banner, features, speciality }) => {
           ">-.5"
         );
 
-      //parallax banner
+      //parallax bannerr
       const parallaxTl = gsap.timeline({
         ease: "none",
         scrollTrigger: {
-          trigger: banner,
+          trigger: bannerr,
           start: () => `top ${header.clientHeight}`,
           scrub: true,
         },
       });
 
-      const position = (banner.offsetHeight - bannerBg.offsetHeight) * 0.4;
+      const position = (bannerr.offsetHeight - bannerrBg.offsetHeight) * 0.4;
       parallaxTl
         .fromTo(
-          bannerBg,
+          bannerrBg,
           {
             y: 0,
           },
@@ -69,7 +69,7 @@ const Platforms = ({ banner, features, speciality }) => {
           }
         )
         .fromTo(
-          bannerContent,
+          bannerrContent,
           {
             y: 0,
           },
@@ -79,7 +79,7 @@ const Platforms = ({ banner, features, speciality }) => {
           "<"
         )
         .fromTo(
-          ".banner-bg .circle",
+          ".bannerr-bg .circle",
           {
             y: 0,
           },
@@ -95,10 +95,10 @@ const Platforms = ({ banner, features, speciality }) => {
 
   return (
     <Base>
-      <section className="section banner pt-0">
+      <section className="section bannerr pt-0">
         <div className="container-xl">
           <div className="relative">
-            <div className="bg-theme banner-bg col-12 absolute left-0 top-0">
+            <div className="bg-theme bannerr-bg col-12 absolute left-0 top-0">
               <Circle
                 className="circle left-[10%] top-12"
                 width={32}
@@ -158,22 +158,22 @@ const Platforms = ({ banner, features, speciality }) => {
             <div className="row overflow-hidden rounded-2xl">
               <div className="col-12">
                 <div className="row relative justify-center pb-10">
-                  <div className="banner-content col-10 pb-10 pt-20 text-center">
+                  <div className="bannerr-content col-10 pb-10 pt-20 text-center">
                     {markdownify(
-                      banner.title,
+                      bannerr.title,
                       "h1",
-                      "mb-8 banner-title opacity-0"
+                      "mb-8 bannerr-title opacity-0"
                     )}
-                    <div className="banner-btn opacity-0">
-                      <Link className="btn btn-primary" href={banner.link.href}>
-                        {banner.link.label}
+                    <div className="bannerr-btn opacity-0">
+                      <Link className="btn btn-primary" href={bannerr.link.href}>
+                        {bannerr.link.label}
                       </Link>
                     </div>
                   </div>
                   <div className="col-10">
                     <ImageFallback
-                      className="banner-img opacity-0"
-                      src={banner.image}
+                      className="bannerr-img opacity-0"
+                      src={bannerr.image}
                       width={1170}
                       height={666}
                       priority={true}
@@ -193,40 +193,40 @@ const Platforms = ({ banner, features, speciality }) => {
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
                 className="mx-auto"
-                src={speciality.primary.image}
+                src={specialities.primary.image}
                 width={575}
                 height={511}
-                alt="primary speciality"
+                alt="primary specialities"
               />
             </div>
             <div className="animate lg:col-5 lg:order-1">
-              <p>{speciality.primary.subtitle}</p>
+              <p>{specialities.primary.subtitle}</p>
               {markdownify(
-                speciality.primary.title,
+                specialities.primary.title,
                 "h2",
                 "mt-4 section-title bar-left"
               )}
-              {markdownify(speciality.primary.description, "p", "mt-10")}
+              {markdownify(specialities.primary.description, "p", "mt-10")}
             </div>
           </div>
           <div className="row items-center">
             <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto"
-                src={speciality.secondary.image}
+                src={specialities.secondary.image}
                 width={375}
                 height={311}
-                alt="secondary speciality"
+                alt="secondary specialities"
               />
             </div>
             <div className="animate lg:col-5">
-              <p>{speciality.secondary.subtitle}</p>
+              <p>{specialities.secondary.subtitle}</p>
               {markdownify(
-                speciality.secondary.title,
+                specialities.secondary.title,
                 "h2",
                 "mt-4 section-title bar-left"
               )}
-              {markdownify(speciality.secondary.description, "p", "mt-10")}
+              {markdownify(specialities.secondary.description, "p", "mt-10")}
             </div>
           </div>
         </div>
@@ -292,15 +292,15 @@ export default Platforms;
 
 // for Platform page data
 export const getStaticProps = async () => {
-  const platformpage = await getListPage("content/_platform.md");
+  const platformpage = await getListPage("content/platformcontent.md");
   const { frontmatter } = platformpage;
-  const { banner, features, speciality } = frontmatter;
+  const { bannerr, features, specialities } = frontmatter;
 
   return {
     props: {
-      banner: banner,
+      bannerr: bannerr,
       features: features,
-      speciality: speciality,
+      specialities: specialities,
     },
   };
 };
