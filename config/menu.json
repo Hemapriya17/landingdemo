@@ -2,11 +2,11 @@
   "main": [
     {
       "name": "Platforms",
-      "url": "/platforms"
+      "url": "/platform"
     },
     {
       "name": "Industries",
-      "url": "/industries"
+      "url": "/industry"
     },
     {
       "name": "Blog",
@@ -23,11 +23,11 @@
         },
         {
           "name": "Platforms",
-          "url": "/platforms"
+          "url": "/platform"
         },
         {
           "name": "Industries",
-          "url": "/industries"
+          "url": "/industry"
         },
         {
           "name": "Blogs",
@@ -47,11 +47,11 @@
     },
     {
       "name": "Platforms",
-      "url": "/platforms"
+      "url": "/platform"
     },
     {
       "name": "Industries",
-      "url": "/industries"
+      "url": "/industry"
     },
     {
       "name": "Blog",
