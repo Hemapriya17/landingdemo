@@ -42,7 +42,7 @@ speciality:
     title: Power of Rapid Experimentation
     subtitle: TERTIARY SPECIALITY
     description: Transform the way you discover, test, and learn. Our state-of-the-art Experimentation Platform is designed to accelerate your experimentation process, allowing you to make informed decisions quickly.
-    image: /images/Rapid.png
+    image: /images/rapid.png
 
 #Testimonial
 testimonial:
