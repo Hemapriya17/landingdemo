@@ -292,7 +292,7 @@ export default Platforms;
 
 // for Platform page data
 export const getStaticProps = async () => {
-  const platformpage = await getListPage("content/platforms.md");
+  const platformpage = await getListPage("content/platform.md");
   const { frontmatter } = platformpage;
   const { banner, features, speciality } = frontmatter;
 
