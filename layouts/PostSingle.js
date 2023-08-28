@@ -7,6 +7,7 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Cta from "./components/Cta";
 import Post from "./partials/Post";
+import Footer from "./partials/Footer";
 
 const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
   let { description, title, date, image, author } = frontmatter;
@@ -79,8 +80,7 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
           </div>
         </div>
       </section>
-
-      <Cta />
+      <Footer/>
     </Base>
   );
 };

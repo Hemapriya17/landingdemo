@@ -1,6 +1,7 @@
 import config from "@config/config.json";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
+import Footer from "./partials/Footer";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
@@ -16,7 +17,7 @@ const Contact = ({ data }) => {
               className="mx-auto lg:pr-10"
               src="/images/vectors/Contact us.png"
               width={497}
-              height={397}
+              height={497}
               alt=""
             />
           </div>
@@ -87,6 +88,7 @@ const Contact = ({ data }) => {
           </div>
         </div>
       </div>
+      <Footer/>
     </section>
   );
 };
