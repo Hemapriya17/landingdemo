@@ -1,6 +1,6 @@
 ---
 title: Enhancing the Richness of Experimentation Run Data - A Comprehensive Approach
-image: /images/blog/Blog2.png
+image: /images/enhancing.svg
 author:
   name: Derick Barker
   avatar: /images/author/derick.jpg

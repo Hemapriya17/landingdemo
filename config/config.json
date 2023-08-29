@@ -3,7 +3,7 @@
     "title": "Twinmo landing",
     "base_url": "/",
     "favicon": "/favicon.png",
-    "logo": "/images/HomeLogo.png",
+    "logo": "/images/logonew.png",
     "logo_width": "150",
     "logo_height": "32",
     "logo_text": "Andromeda"
@@ -30,8 +30,8 @@
 
   "nav_button": {
     "enable": true,
-    "label": "Start for FREE",
-    "link": "https://twinmo.ai/services"
+    "label": "Download Now",
+    "link": "https://themefisher.com/products/andromeda-light-nextjs"
   },
 
   "metadata": {

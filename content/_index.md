@@ -1,7 +1,7 @@
 ---
 banner:
   title: "Unleash the Power of AI based </br> Experimentation in Product Decisions"
-  image: /images/Mypage.png
+  image: /images/image1.svg
   link:
     label: Get Premium Version
     href: "#"
@@ -30,17 +30,17 @@ intro:
 speciality:
   primary:
     title: One Unified Platform
-    subtitle: PRIMARY SPECIALITY
+    subtitle:
     description: Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the.
-    image: /images/Unified.png
+    image: /images/image12.svg
   secondary:
     title: Vertically Integrated Solution
-    subtitle: SECONDARY SPECIALITY
+    subtitle: 
     description: From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code.
-    image: /images/ImageTwinmo.png
+    image: /images/image13.svg
   tertiary:
     title: Power of Rapid Experimentation
-    subtitle: TERTIARY SPECIALITY
+    subtitle: 
     description: Transform the way you discover, test, and learn. Our state-of-the-art Experimentation Platform is designed to accelerate your experimentation process, allowing you to make informed decisions quickly.
     image: /images/rapid.png
 

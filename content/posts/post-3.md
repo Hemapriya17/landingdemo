@@ -1,6 +1,6 @@
 ---
 title: Your All-in-One Experimentation Platform for Data-Driven Decisions - Empowering Actionable Insights
-image: /images/blog/Blog3.png
+image: /images/your.svg
 author:
   name: Abdullah Al Shifat
   avatar: /images/author/abdullah.jpg

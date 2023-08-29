@@ -1,7 +1,7 @@
 ---
 bannerr:
   title: "Your All-in-One Experimentation </br> Platform for Data Driven Decisions"
-  image: /images/platforms/Report.png
+  image: /images/imagebanner2.svg
   link:
     label: Get Premium Version
     href: "#"
@@ -12,34 +12,34 @@ features:
   title: Efficient Testing with </br> Advanced Features
   description: Streamline testing processes with our comprehensive library,</br> featuring AI-driven analysis and real-time tracking.
   list:
-    - icon: "lock" # feather icon: https://feathericons.com/
+    - icon: "book-open" # feather icon: https://feathericons.com/
       title: Predefined Test Procedure Library
       content:
         Unleash efficiency with our expansive, predefined procedure library,
         tailored for a seamless testing experience.
-    - icon: "wind"
+    - icon: "activity"
       title: Test Input and Inventory Management
       content:
         Manage and Optimize your workflows with our holistic test input and inventory
         management system.
-    - icon: "shield"
+    - icon: "check-square"
       title: Step-by-step Digital Work Instructions
       content: Navigate your experiments with ease and precision, courtesy of our detailed digital work instructions.
-    - icon: "link"
+    - icon: "database"
       title: Integrated Test Instruments for Data
       content: Simplify data collection with our integrated testing instruments,
         designed for speedy and accurate results.
-    - icon: "lock"
+    - icon: "check-square"
       title: Interactive Charts for Real-time Test Progress
       content: Track your tests' progress in real-time with our interactive and dynamic charts for enhanced insights.
-    - icon: "wind"
+    - icon: "activity"
       title: Automatic Calculations and Results Analysis
       content: Leave the heavy lifting to our advanced AI engine, taking care of
             calculations and providing insightful results analysis.
-    - icon: "wind"
+    - icon: "file-text"
       title: Simplified Test Report Generation
       content:  Users can easily generate comprehensive test reports with our streamlined and user-friendly reporting tool.
-    - icon: "wind"
+    - icon: "package"
       title: Advanced Analytics for Further Data Analysis
       content: Dive deep into your data with our advanced analytics capabilities,
             for insightful and detailed data examination.
@@ -51,12 +51,12 @@ specialities:
     title: Testrunz
     subtitle: SOFTWARE
     description: Introducing Testrunz, your streamlined solution for executing and tracking product experiments. Testrunz connects to industry-standard test instruments, providing real-time data, analyzing results, and generating reports.
-    image: /images/platforms/Testrunz.png
+    image: /images/image21.svg
   secondary:
     title: Unity
     subtitle: HARDWARE
     description: Meet Unity, our advanced hardware module designed to interface with lab instruments and facilitate a seamless connection to Testrunz. With its 20-channel capacity for thermocouple, AI, DI, DO measurements and power product measurement features.
-    image: /images/platforms/Unity.png
+    image: /images/image22.svg
 
 #Testimonial
 testimonial:

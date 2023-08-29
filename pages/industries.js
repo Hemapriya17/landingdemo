@@ -92,10 +92,10 @@ const Industries = ({ banners, specialityy }) => {
 
   return (
     <Base>
-      <section className="section banners pt-0">
+      <section className="pt-0 section banners">
         <div className="container-xl">
           <div className="relative">
-            <div className="bg-theme banners-bg col-12 absolute left-0 top-0">
+            <div className="absolute top-0 left-0 bg-theme banners-bg col-12">
               <Circle
                 className="circle left-[10%] top-12"
                 width={32}
@@ -152,24 +152,24 @@ const Industries = ({ banners, specialityy }) => {
                 height={65}
               />
             </div>
-            <div className="row overflow-hidden rounded-2xl">
+            <div className="overflow-hidden row rounded-2xl">
               <div className="col-12">
-                <div className="row relative justify-center pb-10">
-                  <div className="banners-content col-10 pb-10 pt-20 text-center">
+                <div className="relative justify-center pb-10 row">
+                  <div className="pt-20 pb-10 text-center banners-content col-10">
                     {markdownify(
                       banners.title,
                       "h1",
                       "mb-8 banners-title opacity-0"
                     )}
-                    <div className="banners-btn opacity-0">
+                    <div className="opacity-0 banners-btn">
                       <Link className="btn btn-primary" href={banners.link.href}>
                         {banners.link.label}
                       </Link>
                     </div>
                   </div>
-                  {/* <div className="col-10 justify-center ">
+                  {/* <div className="justify-center col-10 ">
                     <ImageFallback
-                      className="banners-img opacity-0"
+                      className="opacity-0 banners-img"
                       src={banners.image}
                       width={770}
                       height={666}
@@ -186,13 +186,13 @@ const Industries = ({ banners, specialityy }) => {
       {/* Special Features */}
       <section className="section">
         <div className="container">
-          <div className="row items-center justify-center">
+          <div className="items-center justify-center row">
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
                 className="mx-auto"
                 src={specialityy.primary.image}
                 width={575}
-                height={511}
+                height={411}
                 alt="primary specialityy"
               />
             </div>
@@ -206,13 +206,13 @@ const Industries = ({ banners, specialityy }) => {
               {markdownify(specialityy.primary.description, "p", "mt-10")}
             </div>
           </div>
-          <div className="row items-center">
+          <div className="items-center row">
             <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto"
                 src={specialityy.secondary.image}
-                width={575}
-                height={511}
+                width={545}
+                height={411}
                 alt="secondary specialityy"
               />
             </div>
@@ -226,7 +226,7 @@ const Industries = ({ banners, specialityy }) => {
               {markdownify(specialityy.secondary.description, "p", "mt-10")}
             </div>
           </div>
-          <div className="row items-center justify-center">
+          <div className="items-center justify-center row">
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
                 className="mx-auto"
@@ -246,7 +246,7 @@ const Industries = ({ banners, specialityy }) => {
               {markdownify(specialityy.primary2.description, "p", "mt-10")}
             </div>
           </div>
-          <div className="row items-center">
+          <div className="items-center row">
             <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto"

@@ -1,6 +1,6 @@
 ---
 title: Testrunz - Fostering Collaborative Research and Education Across Disciplines
-image: /images/blog/Blog7.png
+image: /images/collaborative.svg
 author:
   name: Abdullah Al Shifat
   avatar: /images/author/abdullah.jpg

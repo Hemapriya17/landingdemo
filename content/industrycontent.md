@@ -1,7 +1,7 @@
 ---
 banners:
   title: "Bringing the Power of Experimentation </br>  to All Industries"
-  image: /images/platforms/Unity.png
+  image: /images/platforms/imagebanner12.svg
   link:
     label: Get Premium Version
     href: "#"
@@ -11,19 +11,19 @@ specialityy:
   primary:
     title: Personal care appliances
     description: Twinmo.ai excels in prioritizing paramount hygiene. It streamlines testing for grooming appliances, ensuring efficiency and quality in product launches. Manage procedures and data seamlessly for reliable results.
-    image: /images/industries/Personal.png
+    image: /images/image31.svg
   secondary:
     title: Kitchen appliances
     description: Elevate kitchen appliance engineering with streamlined safety testing and performance optimization. Our platform offers real-time data tracking, experiment documentation, and analytics for a superior cooking experience.
-    image: /images/industries/Kitchen.png
+    image: /images/kitchen1.svg
   primary2:
     title: Home furnitures
     description: We follow the highest safety and quality testing standards to give all your customers peace of mind, knowing that your furniture is safe and will last for years to come.
-    image: /images/industries/Furniture.png
+    image: /images/image 303.svg
   secondary2:
     title: Research & Education
     description: Testrunz enables cross-institutional collaboration among researchers and students, fostering interdisciplinary interactions and innovative ideas, thereby enhancing scientific research and education accessibility. 
-    image: /images/industries/Research.png
+    image: /images/image33.svg
 
 #Testimonial
 testimonial:

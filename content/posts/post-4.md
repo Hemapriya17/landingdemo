@@ -1,7 +1,7 @@
 ---
 title: AI-Powered Product Testing - Twinmo's Testrunz Solution
 
-image: /images/blog/Blog4.png
+image: /images/ai2.svg
 author:
   name: Abdullah Al Shifat
   avatar: /images/author/abdullah.jpg

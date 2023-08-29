@@ -1,6 +1,6 @@
 ---
 title: Bringing the Power of Experimentation to All Industries
-image: /images/blog/Blog5.png
+image: /images/power.svg
 author:
   name: Abdullah Al Shifat
   avatar: /images/author/abdullah.jpg

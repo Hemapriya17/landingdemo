@@ -95,10 +95,10 @@ const Platforms = ({ bannerr, features, specialities }) => {
 
   return (
     <Base>
-      <section className="section bannerr pt-0">
+      <section className="pt-0 section bannerr">
         <div className="container-xl">
           <div className="relative">
-            <div className="bg-theme bannerr-bg col-12 absolute left-0 top-0">
+            <div className="absolute top-0 left-0 bg-theme bannerr-bg col-12">
               <Circle
                 className="circle left-[10%] top-12"
                 width={32}
@@ -155,16 +155,16 @@ const Platforms = ({ bannerr, features, specialities }) => {
                 height={65}
               />
             </div>
-            <div className="row overflow-hidden rounded-2xl">
+            <div className="overflow-hidden row rounded-2xl">
               <div className="col-12">
-                <div className="row relative justify-center pb-10">
-                  <div className="bannerr-content col-10 pb-10 pt-20 text-center">
+                <div className="relative justify-center pb-10 row">
+                  <div className="pt-20 pb-10 text-center bannerr-content col-10">
                     {markdownify(
                       bannerr.title,
                       "h1",
                       "mb-8 bannerr-title opacity-0"
                     )}
-                    <div className="bannerr-btn opacity-0">
+                    <div className="opacity-0 bannerr-btn">
                       <Link className="btn btn-primary" href={bannerr.link.href}>
                         {bannerr.link.label}
                       </Link>
@@ -172,7 +172,7 @@ const Platforms = ({ bannerr, features, specialities }) => {
                   </div>
                   <div className="col-10">
                     <ImageFallback
-                      className="bannerr-img opacity-0"
+                      className="opacity-0 bannerr-img"
                       src={bannerr.image}
                       width={1170}
                       height={666}
@@ -189,7 +189,7 @@ const Platforms = ({ bannerr, features, specialities }) => {
       {/* Special Features */}
       <section className="section">
         <div className="container">
-          <div className="row items-center justify-center">
+          <div className="items-center justify-center row">
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
                 className="mx-auto"
@@ -209,13 +209,13 @@ const Platforms = ({ bannerr, features, specialities }) => {
               {markdownify(specialities.primary.description, "p", "mt-10")}
             </div>
           </div>
-          <div className="row items-center">
+          <div className="items-center row">
             <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto"
                 src={specialities.secondary.image}
-                width={375}
-                height={311}
+                width={575}
+                height={511}
                 alt="secondary specialities"
               />
             </div>
@@ -240,7 +240,7 @@ const Platforms = ({ bannerr, features, specialities }) => {
             {markdownify(features.title, "h2", "mt-4 section-title")}
             {markdownify(features.description, "p", "mt-10")}
           </div>
-          <div className="animate from-right relative mt-10">
+          <div className="relative mt-10 animate from-right">
             <Swiper
               slidesPerView={1}
               pagination={{
@@ -269,13 +269,13 @@ const Platforms = ({ bannerr, features, specialities }) => {
                     <div className="feature-card-icon inline-flex h-20 w-20 items-center justify-center rounded-md border border-[#fff7f3] text-primary">
                       <FeatherIcon icon={item.icon} />
                     </div>
-                    <h3 className="h4 mb-5 mt-6">{item.title}</h3>
+                    <h3 className="mt-6 mb-5 h4">{item.title}</h3>
                     <p>{item.content}</p>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="relative mt-9 flex justify-center">
+            <div className="relative flex justify-center mt-9">
               <div className="pagination " ref={paginationRef}></div>
             </div>
           </div>

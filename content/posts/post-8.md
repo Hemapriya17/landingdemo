@@ -1,6 +1,6 @@
 ---
 title: Revolutionizing Personal Care Appliance Testing for a Brighter Tomorrow.
-image: /images/blog/Blog8.png
+image: /images/personal1.svg
 author:
   name: Abdullah Al Shifat
   avatar: /images/author/abdullah.jpg

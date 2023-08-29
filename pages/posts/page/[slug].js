@@ -3,7 +3,6 @@ import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import Banner from "@layouts/components/Banner";
 import Cta from "@layouts/components/Cta";
-import Footer from "@layouts/partials/Footer";
 import { getListPage, getSinglePage } from "@lib/contentParser";
 import { gsap } from "@lib/gsap";
 import Post from "@partials/Post";
@@ -43,7 +42,7 @@ const BlogPagination = ({
         <Banner title={title} />
         <div className="container">
           <div
-            className="row justify-center pb-16 pt-20 opacity-0"
+            className="row justify-center pt-20 pb-16 opacity-0"
             ref={postsRef}
           >
             {currentPosts.map((post, i) => (
@@ -59,7 +58,8 @@ const BlogPagination = ({
           />
         </div>
       </section>
-      <Footer />
+      {/* CTA */}
+      <Cta />
     </Base>
   );
 };
