@@ -1,12 +1,14 @@
 import config from "@config/config.json";
 import Banner from "./components/Banner";
 import ImageFallback from "./components/ImageFallback";
+import Footer from "./partials/Footer";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title } = frontmatter;
 
   return (
+    <>
     <section className="section">
       <Banner title={title} />
       <div className="container">
@@ -87,7 +89,10 @@ const Contact = ({ data }) => {
           </div>
         </div>
       </div>
-    </section>
+     
+    </section> 
+    <Footer/>
+    </>
   );
 };
 

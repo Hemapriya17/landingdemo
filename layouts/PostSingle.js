@@ -7,6 +7,7 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Cta from "./components/Cta";
 import Post from "./partials/Post";
+import Footer from "./partials/Footer";
 
 const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
   let { description, title, date, image, author } = frontmatter;
@@ -34,7 +35,7 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
               </div>
               <div className="lg:col-8">
                 {markdownify(title, "h1", "h2 mt-6")}
-                 {/* <div className="mt-6 flex items-center">
+                {/* <div className="mt-6 flex items-center">
                  <div className="overflow-hidden rounded-full border-2 border-white shadow-[0_0_0_2px] shadow-primary">
                     <ImageFallback
                       src={author.avatar}
@@ -43,14 +44,14 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
                       alt="author"
                     />
                   </div> */}
-                  {/* <div className="pl-5">
+                {/* <div className="pl-5">
                     <p className="font-medium text-dark">{author.name}</p>
                     <p>
                       {dateFormat(date)} - {readingTime(content)}
                     </p>
                   </div>
                 </div> */}
-                <div className="content mt-16 mb-16 text-left">
+                <div className="content mb-16 mt-16 text-left">
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
               </div>
@@ -79,8 +80,8 @@ const PostSingle = ({ frontmatter, content, mdxContent, recentPosts }) => {
           </div>
         </div>
       </section>
-
-      <Cta />
+      {/* Footer */}
+      <Footer />
     </Base>
   );
 };
