@@ -1,6 +1,6 @@
 ---
 title: Embrace the Future of Product Testing with Twinmo's Testrunz
-image: /images/test01.svg
+image: /images/blog/TwinmoImage.svg
 author:
   name: Abdullah Al Shifat
   avatar: /images/author/abdullah.jpg
