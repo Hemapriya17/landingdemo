@@ -14,8 +14,8 @@ const Post = ({ post, i }) => {
             className="w-full object-cover"
             src={post.frontmatter.image}
             alt={post.frontmatter.title}
-            width={570}
-            height={335}
+            width={470}
+            height={405}
           />
         </Link>
       )}
@@ -23,7 +23,7 @@ const Post = ({ post, i }) => {
         <h2 className="h4">
           <Link
             href={`/${blog_folder}/${post.slug}`}
-            className="block hover:text-primary hover:underline"
+            className="block hover:text-primary"
           >
             {post.frontmatter.title}
           </Link>
@@ -31,23 +31,14 @@ const Post = ({ post, i }) => {
         <p className="mt-4">
           {post.content.slice(0, Number(summary_length))}...
         </p>
-        <div className="mt-6 flex items-center">
-          <div className="overflow-hidden rounded-full border-2 border-white shadow-[0_0_0_2px] shadow-primary">
-            <ImageFallback
-              src={post.frontmatter.author.avatar}
-              width={50}
-              height={50}
-              alt="author"
-            />
-          </div>
-          <div className="pl-5">
-            <p className="font-medium text-dark">
-              {post.frontmatter.author.name}
-            </p>
-            <p>
-              {dateFormat(post.frontmatter.date)} - {readingTime(post.content)}
-            </p>
-          </div>
+        <div className="mt-8">
+          <button className=" mt-4 p-3 block hover:bg-primary hover:text-white text-primary bg-white">
+            <Link
+              href={`/${blog_folder}/${post.slug}`}
+            >
+              Read more
+            </Link>
+          </button>
         </div>
       </div>
     </div>

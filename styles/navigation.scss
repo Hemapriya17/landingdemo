@@ -6,7 +6,7 @@
   @apply fixed left-0 w-full  top-0 z-50 bg-white transition-all duration-500 ;
 
   &-sticky {
-    @apply py-[18px] shadow-[0_2px_8px_rgba(32,45,73,0.1)];
+    @apply shadow-[0_2px_8px_rgba(32,45,73,0.1)];
   }
 
   &.unpinned {

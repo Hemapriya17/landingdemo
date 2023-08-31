@@ -191,7 +191,7 @@ const Industries = ({ banners, specialityy }) => {
               <ImageFallback
                 className="mx-auto"
                 src={specialityy.primary.image}
-                width={575}
+                width={545}
                 height={411}
                 alt="primary specialityy"
               />
@@ -231,7 +231,7 @@ const Industries = ({ banners, specialityy }) => {
               <ImageFallback
                 className="mx-auto"
                 src={specialityy.primary2.image}
-                width={575}
+                width={545}
                 height={511}
                 alt="primary specialityy"
               />
@@ -251,8 +251,8 @@ const Industries = ({ banners, specialityy }) => {
               <ImageFallback
                 className="mx-auto"
                 src={specialityy.secondary2.image}
-                width={575}
-                height={511}
+                width={545}
+                height={411}
                 alt="secondary specialityy"
               />
             </div>

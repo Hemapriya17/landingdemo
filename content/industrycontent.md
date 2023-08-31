@@ -15,7 +15,7 @@ specialityy:
   secondary:
     title: Kitchen appliances
     description: Elevate kitchen appliance engineering with streamlined safety testing and performance optimization. Our platform offers real-time data tracking, experiment documentation, and analytics for a superior cooking experience.
-    image: /images/kitchen1.svg
+    image: /images/industries/kitchen1.svg
   primary2:
     title: Home furnitures
     description: We follow the highest safety and quality testing standards to give all your customers peace of mind, knowing that your furniture is safe and will last for years to come.

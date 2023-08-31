@@ -19,5 +19,6 @@
 @layer swiper {
   @import '../node_modules/swiper/swiper.scss';
   @import 'swiper/scss/pagination';
+  @import 'swiper/css/navigation';
   @import './swiper.scss';
 }

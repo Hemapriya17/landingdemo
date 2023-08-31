@@ -13,19 +13,19 @@ const Footer = () => {
     // <footer className="">
       <div className="container">
         <div className="row border-y border-border py-12">
-          <div className="md:col-6 lg:col-4">
+          <div className="md:col-5 lg:col-4 lg:mt-0 m-8">
             <Logo />
-            {markdownify(footer_content, "p", "mt-3")}
+            {markdownify(footer_content, "p", "mt-5")}
           </div>
-          <div className=" mt-8 md:col-6 lg:col-4 lg:mt-0">
+          <div className="mt-8 md:col-6 lg:col-4 lg:mt-0">
             <h3 className="h5">Socials</h3>
             <div className="mt-5">
-              {email && <Link href={`mailto:${email}`}>{email}</Link>}
+               <Link href={`mailto:${email}?subject=Queries about Twinmo`}>{email}</Link>
               {/* social icons */}
               <Social source={social} className="social-icons mt-5" />
             </div>
           </div>
-          <div className="mt-8 md:col-6 lg:col-4 lg:mt-0">
+          <div className="mt-8 md:col-8 lg:col-3 lg:mt-0">
             <h3 className="h5">Quick Links</h3>
             {/* footer menu */}
             <ul className="mt-5 leading-10">
@@ -33,7 +33,7 @@ const Footer = () => {
                 <li key={menu.name}>
                   <Link
                     href={menu.url}
-                    className=" hover:text-primary hover:underline"
+                    className=" hover:text-primary"
                   >
                     {menu.name}
                   </Link>

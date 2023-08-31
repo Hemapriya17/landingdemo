@@ -8,7 +8,7 @@ import { markdownify } from "@lib/utils/textConverter";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Platforms = ({ bannerr, features, specialities }) => {
@@ -95,10 +95,10 @@ const Platforms = ({ bannerr, features, specialities }) => {
 
   return (
     <Base>
-      <section className="pt-0 section bannerr">
+      <section className="section bannerr pt-0">
         <div className="container-xl">
           <div className="relative">
-            <div className="absolute top-0 left-0 bg-theme bannerr-bg col-12">
+            <div className="bg-theme bannerr-bg col-12 absolute left-0 top-0">
               <Circle
                 className="circle left-[10%] top-12"
                 width={32}
@@ -155,24 +155,27 @@ const Platforms = ({ bannerr, features, specialities }) => {
                 height={65}
               />
             </div>
-            <div className="overflow-hidden row rounded-2xl">
+            <div className="row overflow-hidden rounded-2xl">
               <div className="col-12">
-                <div className="relative justify-center pb-10 row">
-                  <div className="pt-20 pb-10 text-center bannerr-content col-10">
+                <div className="row relative justify-center pb-10">
+                  <div className="bannerr-content col-10 pb-10 pt-20 text-center">
                     {markdownify(
                       bannerr.title,
                       "h1",
                       "mb-8 bannerr-title opacity-0"
                     )}
-                    <div className="opacity-0 bannerr-btn">
-                      <Link className="btn btn-primary" href={bannerr.link.href}>
+                    <div className="bannerr-btn opacity-0">
+                      <Link
+                        className="btn btn-primary"
+                        href={bannerr.link.href}
+                      >
                         {bannerr.link.label}
                       </Link>
                     </div>
                   </div>
                   <div className="col-10">
                     <ImageFallback
-                      className="opacity-0 bannerr-img"
+                      className="bannerr-img opacity-0"
                       src={bannerr.image}
                       width={1170}
                       height={666}
@@ -189,7 +192,7 @@ const Platforms = ({ bannerr, features, specialities }) => {
       {/* Special Features */}
       <section className="section">
         <div className="container">
-          <div className="items-center justify-center row">
+          <div className="row items-center justify-center">
             <div className="animate lg:col-6 lg:order-2">
               <ImageFallback
                 className="mx-auto"
@@ -209,7 +212,7 @@ const Platforms = ({ bannerr, features, specialities }) => {
               {markdownify(specialities.primary.description, "p", "mt-10")}
             </div>
           </div>
-          <div className="items-center row">
+          <div className="row items-center">
             <div className="animate lg:col-6">
               <ImageFallback
                 className="mx-auto"
@@ -240,20 +243,27 @@ const Platforms = ({ bannerr, features, specialities }) => {
             {markdownify(features.title, "h2", "mt-4 section-title")}
             {markdownify(features.description, "p", "mt-10")}
           </div>
-          <div className="relative mt-10 animate from-right">
+          <div className="animate from-right relative mt-10">
             <Swiper
               slidesPerView={1}
+              loop={true}
+              navigation={{
+                clickable: true,
+                type: "arrow",
+              }}
+              style={{
+                "--swiper-navigation-color": "#fff",
+              }}
               pagination={{
                 type: "bullets",
                 el: paginationRef.current,
                 clickable: true,
                 dynamicBullets: true,
               }}
-              // autoplay={{ delay: 3000 }}
               onBeforeInit={(swiper) => {
                 swiper.params.pagination.el = paginationRef.current;
               }}
-              modules={[Pagination]}
+              modules={[Pagination, Navigation]}
               breakpoints={{
                 768: {
                   slidesPerView: 2,
@@ -269,13 +279,13 @@ const Platforms = ({ bannerr, features, specialities }) => {
                     <div className="feature-card-icon inline-flex h-20 w-20 items-center justify-center rounded-md border border-[#fff7f3] text-primary">
                       <FeatherIcon icon={item.icon} />
                     </div>
-                    <h3 className="mt-6 mb-5 h4">{item.title}</h3>
+                    <h3 className="h4 mb-5 mt-6">{item.title}</h3>
                     <p>{item.content}</p>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="relative flex justify-center mt-9">
+            <div className="relative mt-9 flex justify-center">
               <div className="pagination " ref={paginationRef}></div>
             </div>
           </div>

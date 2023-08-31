@@ -6,7 +6,7 @@
     "logo": "/images/logonew.png",
     "logo_width": "150",
     "logo_height": "32",
-    "logo_text": "Andromeda"
+    "logo_text": "Twinmo"
   },
 
   "settings": {
@@ -18,7 +18,7 @@
   "params": {
     "tag_manager_id": "",
     "contact_form_action": "#",
-    "footer_content": "Our innovative all-in-one solution revolutionizes the way industries approach experimentation and product development.",
+    "footer_content": "Our innovative all-in-one solution revolutionizes <br/> the way industries approach experimentation <br/> and product development.",
     "copyright": "© 2023 Twinmo, Inc. All rights reserved"
   },
 
@@ -31,13 +31,13 @@
   "nav_button": {
     "enable": true,
     "label": "Download Now",
-    "link": "https://themefisher.com/products/andromeda-light-nextjs"
+    "link": "/contact"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Twinmo",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Andromeda-light Nextjs Blog Template"
+    "meta_description": "AI-powered experimentation platform revolutionizing product development "
   },
 
   "call_to_action": {

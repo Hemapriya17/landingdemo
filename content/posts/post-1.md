@@ -1,5 +1,5 @@
 ---
-title: AI-based Experimentation - Unleashing the Power of Product Decisions
+title: AI-based Experimentation - Power of Product Decisions
 image: /images/ai.svg
 author:
   name: Abdullah Al Shifat
