@@ -11,7 +11,7 @@ specialityy:
   primary:
     title: Personal care appliances
     description: Twinmo.ai excels in prioritizing paramount hygiene. It streamlines testing for grooming appliances, ensuring efficiency and quality in product launches. Manage procedures and data seamlessly for reliable results.
-    image: /images/Personal.svg
+    image: /images/industries/Personal.svg
   secondary:
     title: Kitchen appliances
     description: Elevate kitchen appliance engineering with streamlined safety testing and performance optimization. Our platform offers real-time data tracking, experiment documentation, and analytics for a superior cooking experience.
