@@ -185,116 +185,11 @@ const Home = ({ banner, intro, speciality, testimonial }) => {
                 </div>
               </div>
             </div>
-            {/* <div className="row border-y border-border py-5">
-              <div className="animate from-right col-12">
-                <Swiper
-                  loop={true}
-                  slidesPerView={3}
-                  breakpoints={{
-                    992: {
-                      slidesPerView: 5,
-                    },
-                  }}
-                  spaceBetween={20}
-                  modules={[Autoplay]}
-                  autoplay={{ delay: 3000 }}
-                >
-                  {brands.map((brand, index) => (
-                    <SwiperSlide
-                      className=" h-20 cursor-pointer py-6 px-6 grayscale  transition hover:grayscale-0 lg:px-10"
-                      key={"brand-" + index}
-                    >
-                      <div className="relative h-full">
-                        <ImageFallback
-                          className="object-contain"
-                          src={brand}
-                          sizes="100vw"
-                          alt=""
-                          fill={true}
-                          priority={true}
-                        />
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
 
-      {/* Short Into */}
-      {/* <section className="section pt-0">
-        <div className="container-xl">
-          <div className="relative px-4 py-[70px]">
-            <div className="text-center">
-              <div className="animate">
-                <p>{intro.subtitle}</p>
-                {markdownify(intro.title, "h2", "mt-4 section-title")}
-                {markdownify(intro.description, "p", "mt-10")}
-              </div>
-              <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
-                <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
-              </div>
-            </div>
-            <div className="bg-theme absolute top-0 left-0 w-full">
-              <Circle
-                className="left-[10%] top-12"
-                width={32}
-                height={32}
-                fill={false}
-              />
-              <Circle className="left-[3%] top-[30%]" width={85} height={85} />
-              <Circle
-                className="left-[22%] bottom-[52%]"
-                width={20}
-                height={20}
-              />
-              <Circle
-                className="left-[15%] bottom-[35%]"
-                width={47}
-                height={47}
-                fill={false}
-              />
-              <Circle
-                className="left-[6%] bottom-[6%]"
-                width={62}
-                height={62}
-                fill={false}
-              />
-              <Circle
-                className="right-[12%] top-[12%]"
-                width={20}
-                height={20}
-              />
-              <Circle
-                className="right-[2%] top-[30%]"
-                width={73}
-                height={73}
-                fill={false}
-              />
-              <Circle
-                className="right-[19%] top-[50%]"
-                width={37}
-                height={37}
-                fill={false}
-              />
-              <Circle
-                className="right-[33%] top-[52%]"
-                width={20}
-                height={20}
-              />
-              <Circle
-                className="right-[5%] bottom-[18%]"
-                width={65}
-                height={65}
-              />
-            </div>
-          </div>
-        </div>
-      </section> */}
 
-      {/* Special Features */}
       <section className="section">
         <div className="container">
           <div className="row items-center justify-center mb-20">
@@ -372,13 +267,11 @@ export default Home;
 export const getStaticProps = async () => {
   const homepage = await getListPage("content/_index.md");
   const { frontmatter } = homepage;
-  const { banner, intro, speciality, testimonial } =
+  const { banner, speciality, testimonial } =
     frontmatter;
-
   return {
     props: {
       banner: banner,
-      intro: intro,
       speciality: speciality,
       testimonial: testimonial,
     },
